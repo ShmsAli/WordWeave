@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+      @apply text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-950;
+    }
+    h2 {
+      @apply text-[28px] sm:text-[32px] font-medium text-gray-950;
+    }
+    h3 {
+      @apply text-[20px] sm:text-[26px] font-medium text-gray-950;
+    }
+    h4 {
+      @apply text-[18px] sm:text-[24px] font-medium text-gray-950;
+    }
+
+    ul {
+      @apply list-disc list-inside pl-2;
+    }
+
+    ol {
+      @apply list-decimal list-inside pl-2;
+    }
+
+    code {
+      @apply font-mono bg-gray-950/30 text-gray-950 py-1 px-2 rounded-lg;
+    }
+    
+  }
+
+  @layer components {
+    /* Header Logo Text */
+    .text-logo {
+        @apply text-[20px] md:text-[24px] font-medium text-black;
+      }
+    /* Post Date Text */
+    .text-date {
+        @apply text-[14px] md:text-[16px] font-medium text-[#636363];
+      }
+    /* Post Author Text */
+    .text-post {
+        @apply leading-9 text-[16px] md:text-[19px] font-medium text-gray-800;
+      }
+    .text-author {
+        @apply text-[16px] md:text-[18px] font-medium text-[#282828];
+      }
+    /* Input Placeholder Text */
+    .text-placeholder {
+        @apply text-[#555555] text-sm
+    }
+
+    .container {
+      @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+    }
+
+    .input-file-style {
+      @apply relative m-0 block w-full min-w-0 flex-auto border-solid  border-[#A6A6A6] border rounded-lg bg-clip-padding px-3 py-[0.32rem] text-base font-normal text-neutral-700 transition duration-300 ease-in-out file:-mx-3 file:-my-[0.32rem] file:overflow-hidden file:rounded-none file:border-0 file:border-solid file:border-inherit file:bg-neutral-100 file:px-3 file:py-[0.32rem] file:text-neutral-700 file:transition file:duration-150 file:ease-in-out file:[border-inline-end-width:1px] file:[margin-inline-end:0.75rem] hover:file:bg-neutral-200 focus:outline-none focus:border-gray-600 focus:ring-gray-600 focus:ring-1
+    }
+
+    .input-simple-style {
+      @apply px-3 py-1 w-full placeholder:text-[#9C9C9C] placeholder:text-sm border-[#A6A6A6] border rounded-lg focus:outline-none focus:border-gray-600 focus:ring-gray-600 focus:ring-1 
+    }
+
+    .dropdown-link {
+      @apply px-4 py-2 text-gray-700 text-left hover:bg-gray-100
+    }
+
+    .divider {
+      @apply border-b border-gray-200
+    }
+
+    .form-div {
+      @apply grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-0 mt-6
+    }
+
+    .form-button {
+      @apply mt-4 bg-gray-950 border-none text-white
+    }
+
+    .badge-danger {
+      @apply inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10;
+    }
+
+    .badge-success{
+      @apply inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20;
+    }
+    
+  }
